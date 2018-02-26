@@ -2,8 +2,9 @@ def my_collect(array)
   new_array = []
   i = 0 
   if i < array.length 
-    yield collection[i]
+    yield array[i]
     i = i + 1
+    new_array << array[i]
   end
-  new_array << collection
+  new array
 end
