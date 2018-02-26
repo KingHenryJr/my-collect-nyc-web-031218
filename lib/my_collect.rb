@@ -1,10 +1,10 @@
-def my_collect(array)
-  new_array = []
+def my_collect(collection) 
   i = 0 
-  if i < array.length 
-    yield array[i]
+  new_array = []
+  while i < collections.length 
+  
+    new_array << yield(array[i])
     i = i + 1
-    new_array << array[i]
   end
   new_array
 end
